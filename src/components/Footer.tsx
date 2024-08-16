@@ -1,6 +1,7 @@
 import { useRouter } from 'next/navigation'
 import { logoutAccount } from '@/lib/actions/user.actions'
 import Image from 'next/image'
+import { Button } from './ui/button';
 
 const Footer = ({ user, type = 'desktop' }: FooterProps) => {
   const router = useRouter();
@@ -28,9 +29,9 @@ const Footer = ({ user, type = 'desktop' }: FooterProps) => {
         </p>
       </div>
 
-      <button className="footer_image" onClick={handleLogOut}>
+      <Button className="footer_image" onClick={handleLogOut}>
         <Image src="icons/logout.svg" fill alt="Logout Icon" />
-      </button>
+      </Button>
     </footer>
   )
 }
