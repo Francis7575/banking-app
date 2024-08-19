@@ -1,4 +1,3 @@
-import Image from "next/image";
 
 export default function RootLayout({
   children,
@@ -10,12 +9,10 @@ export default function RootLayout({
     {children}
     <div className="auth-asset">
       <div>
-        <Image 
+        <img
           src="/icons/auth-image.svg"
           alt="Auth image"
-          width={500}
-          height={500}
-          className="rounded-l-xl"
+          className="rounded-l-xl w-[500px] h-[500px]"
         />
       </div>
     </div>
