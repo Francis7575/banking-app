@@ -3,7 +3,7 @@ import HeaderBox from '@/components/HeaderBox';
 import TotalBalanceBox from '@/components/TotalBalanceBox';
 import RightSidebar from '@/components/RightSidebar';
 import { getLoggedInUser } from '@/lib/actions/user.actions';
-import { getAccount, getAccounts } from '@/lib/actions/bank.action';
+import { getAccount, getAccounts } from '@/lib/actions/bank.actions';
 import RecentTransactions from '@/components/RecentTransactions';
 
 const Home = async ({ searchParams: { id, page } }: SearchParamProps) => {
